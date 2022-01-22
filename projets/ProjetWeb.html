@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Projet Web</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="barre" id="fixed">
+
+            <input id="coche" type="checkbox">
+            <span id="menuDeffilement"></span>
+
+            <a id="logo" href="../index.html"> <img src="../img/logo.png" alt="logo"></a>
+
+            <nav>
+                <ul>
+                    <li><a id="menuAcceuil" href="../index.html#acceuil">Accueil</a></li>
+                    <li><a id="menuPresentation" href="../index.html#presentation">Qui suis-je?</a></li>
+                    <li><a id="menuFormation" href="../index.html#formation">Ma formation</a></li>
+                    <li id="menuProjets" class="souslist"><a href="../index.html#projets">Mes projets</a>
+                        <ul id="sousList">
+                            <li><a href="OutilsGeometrique.html">Outils géométrique</a></li>
+                            <li><a href="ProjetWeb.html">Projet web</a></li>
+                            <li><a href="MirroirIntelligent.html">Mirroir intélligent</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="menuContact" href="../index.html#contact">Me contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <input id="boutonTheme" type="checkbox">
+        <span id="imageBoutonTheme"><img src="../img/personnalisation.png" alt="logo du menu de personnalisation"> </span>
+
+            <div class="fenetreTheme">
+                <h4>Thème</h4>
+                <div>
+                <input id="themeSombre" type="radio" name="theme" value="sombre">
+                <label for="themeSombre">sombre</label>
+                </div>
+    
+                <div>
+                <input id="themeClaire" type="radio" name="theme" value="claire" checked>
+                <label for="themeClaire">claire</label>
+                </div>
+            </div>
+
+    </header>
+
+
+    <main >
+        <div id="AcceuilProjet"></div>
+        <aside>
+            <ul>
+                <li><a href="#p2PresentationProjet">Présentation</a></li>
+                <li><a href="#p2Analyse">L'analyse</a></li>
+                <li><a href="#p2Creation">La création</a></li>                 
+                <li><a href="#p2Resultat">Le résultat</a></li>
+            </ul>
+        </aside>
+
+        <div class="mainProjets">
+
+            <h2 id="p2PresentationProjet">En quoi consiste le projet?</h2>
+            <p>Le projet HTML est un exercice de web e, groupe de 2 pesonnes qui à pour but de créer un site pour un client fictif</p>
+
+            <h2 id="p2Analyse">L'analyse</h2>
+            <p>Le projet a débuté par la création d'un dossier de conception afin d'analyser les besoin de notre client fictif et ainsi réaliser un site qui correspond à ces demandes</p>
+
+            <img src="../img/p2CharteCouleur.png" alt="image de la charte graphique créer lors du projet">
+            <img src="../img/p2typo.png" alt="image des typographies utiliser lors du projet">
+
+            <h2 id="p2Creation">La création</h2>
+            <p>La programmation du projet c'est déroulé sur plusieurs scéances de cour et sur notre temps libre sur plusieurs semaines</p>
+
+            <h3 id="p2Resultat">Le résultat</h3>
+            <p>Nous avons avons réaliser un site qui répond au demande de notre client fictif énoncé dans le dossier de conception et malgré quelque problème le site est fonctionnel et responsive tablet et smarthphone</p>
+
+            <img src="../img/p2Site1.png" alt="image du site créer lors du projet">
+            <img src="../img/p2Site2.png" alt="image du site créer lors du projet">
+            <img src="../img/p2Site3.png" alt="image du site créer lors du projet">
+            <img src="../img/p2Site4.png" alt="image du site créer lors du projet">
+            <img src="../img/p2Site5.png" alt="image du site créer lors du projet">
+            <img src="../img/p2Site6.png" alt="image du site créer lors du projet">
+            <img src="../img/p2Site8.png" alt="image du site créer lors du projet">
+            <img src="../img/p2Site9.png" alt="image du site créer lors du projet">
+
+        </div>
+    </main>
+
+    <footer>
+        <p>GRANDY Guillaume, tous droits réservés</p>
+        <p>le 11/10/2021</p>
+    </footer>
+
+<script src="../js/java.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Outils géométrique</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="barre" id="fixed">
+
+            <input id="coche" type="checkbox">
+            <span id="menuDeffilement"></span>
+
+            <a id="logo" href="../index.html"> <img src="../img/logo.png" alt="logo"></a>
+
+            <nav>
+                <ul>
+                    <li><a id="menuAcceuil" href="../index.html#acceuil">Accueil</a></li>
+                    <li><a id="menuPresentation" href="../index.htm#presentation">Qui suis-je?</a></li>
+                    <li><a id="menuFormation" href="../index.html#formation">Ma formation</a></li>
+                    <li id="menuProjets" class="souslist"><a href="../index.html#projets">Mes projets</a>
+                        <ul id="sousList">
+                            <li><a href="OutilsGeometrique.html">Outils géométrique</a></li>
+                            <li><a href="ProjetWeb.html">Projet web</a></li>
+                            <li><a href="MirroirIntelligent.html">Mirroir intélligent</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="menuContact" href="../index.html#contact">Me contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <input id="boutonTheme" type="checkbox">
+        <span id="imageBoutonTheme"><img src="../img/personnalisation.png" alt="logo du menu de personnalisation"> </span>
+
+            <div class="fenetreTheme">
+                <h4>Thème</h4>
+                <div>
+                <input id="themeSombre" type="radio" name="theme" value="sombre">
+                <label for="themeSombre">sombre</label>
+                </div>
+    
+                <div>
+                <input id="themeClaire" type="radio" name="theme" value="claire" checked>
+                <label for="themeClaire">claire</label>
+                </div>
+            </div>
+
+    </header>
+
+    <main >
+        <div id="AcceuilProjet"></div>
+        
+        <aside id="asideDiv">
+            <ul>
+                <li><a href="#p1PresentationProjet">Présentation</a></li>
+                <li><a href="#p1QueFaire">Le but</a></li>
+                <li><a href="#p1CommentFaire">Les étapes</a></li>
+                <li><a href="#p1Creation">La création</a></li>                
+                <li><a href="#p1Resultat">Le résultat</a></li>
+            </ul>
+        </aside>
+
+        <div class="mainProjets">
+
+            <h2 id="p1PresentationProjet">En quoi consiste le projet?</h2>
+            <p>Le projet de millieu de 1ère année est exercice en groupe de 3 personne consistant à réaliser la meilleure application possible en une semaine.</p>
+
+            <h3 id="p1QueFaire">Que doit faire cette application?</h3>
+            <p>Cette application est à destination des enfants. Elle doit les aider à apprendre les outils géométrique (règle et rapporteur) tout en restant ludique.<br>
+            Les enfants devait aider un petit robot à retrouver son chemin jusqu'a la sortie en esquivant des obstacles.</p>
+            
+            <h3 id="p1CommentFaire">Que devions nous coder ?</h3>
+            <p>L'exercice était composé de six parties.<br><br>
+            Tout d'abord l'utilisateur devait positionner des obstacles sur un espace vide<br><br>
+            Par la suite il était invité à tracé une ligne brisé pour rejoindre un point (en bas à guache) à un autre (en haut à droite) sans toucher les obstacles (précédement utilisé).<br><br>
+            Lorsque le trais était réalisé, le logiciel devait vérifier que la ligne ne touchait touchait aucun obstacle. Le logiciel devait prendre en compte que le petit robot avait une taille, les lignes passant trop proche des obstacles devait être également signalé.<br><br>
+            l'utilisateur était alors invité à changer la ligne et revérifier.<br><br>
+            Si la ligne était correcte le joueur avait accès à une règle et un rapporteur et pouvait mesurer le taille des trais ainsi que leurs angles.<br><br>
+            Enfin il rentrait toute ces informations dans le logiciel qui simulait le déplacement du robot selon les instructions.<br><br>
+            Si le robot suivait la ligne l'enfant avait gagné</p>
+
+            <h2 id="p1Creation">La création</h2>
+            <p>La programmation du projet c'est déroulé en distanciel sur une semaine sans autre cour. Nous avons utiliser le seul langage que connaissions, le C++ avec la librairie SDL.</p>
+
+            <h3 id="p1Resultat">Le résultat</h3>
+            <p>Nous avons réaliser bien plus que demander dans l'exercice. Pour chaque étapes nous avons apporté des fonctionnalitées supplémentaires. Enfin nous avons apporté une petite histoire et une identité graphique.</p>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>GRANDY Guillaume, tous droits réservés</p>
+        <p>le 11/10/2021</p>
+    </footer>
+
+<script src="../js/java.js"></script>
+</body>
+
+</html>

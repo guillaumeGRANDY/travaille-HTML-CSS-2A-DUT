@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Mirroir intélligent</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+
+    <body>
+        <header>
+            <div class="barre" id="fixed">
+
+                <input id="coche" type="checkbox">
+                <span id="menuDeffilement"></span>
+
+                <a id="logo" href="../index.html"> <img src="../img/logo.png" alt="logo"></a>
+
+                <nav>
+                    <ul>
+                        <li><a id="menuAcceuil" href="../index.html#acceuil">Accueil</a></li>
+                        <li><a id="menuPresentation" href="../index.html#presentation">Qui suis-je?</a></li>
+                        <li><a id="menuFormation" href="../index.html#formation">Ma formation</a></li>
+                        <li id="menuProjets" class="souslist"><a href="../index.html#projets">Mes projets</a>
+                            <ul id="sousList">
+                                <li><a href="OutilsGeometrique.html">Outils géométrique</a></li>
+                                <li><a href="ProjetWeb.html">Projet web</a></li>
+                                <li><a href="MirroirIntelligent.html">Mirroir intélligent</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="menuContact" href="../index.html#contact">Me contacter</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <input id="boutonTheme" type="checkbox">
+            <span id="imageBoutonTheme"><img src="../img/personnalisation.png" alt="logo du menu de personnalisation"> </span>
+
+                <div class="fenetreTheme">
+                    <h4>Thème</h4>
+                    <div>
+                    <input id="themeSombre" type="radio" name="theme" value="sombre">
+                    <label for="themeSombre">sombre</label>
+                    </div>
+        
+                    <div>
+                    <input id="themeClaire" type="radio" name="theme" value="claire" checked>
+                    <label for="themeClaire">claire</label>
+                    </div>
+                </div>
+
+        </header>
+
+        <main >
+            <div id="AcceuilProjet"></div>
+            
+            <aside id="aside">
+                <ul>
+                    <li><a href="#p3PresentationProjet">Présentation</a></li>
+                    <li><a href="#p3Analyse">L'analyse</a></li>
+                    <li><a href="#p3Conception">La conception</a></li>
+                    <li><a href="#p3Creation">La création</a></li>                 
+                    <li><a href="#p3Resultat">Le résultat</a></li>
+                    <li><a href="#p3Matos">Le matériel</a></li>
+                </ul>
+            </aside>
+
+            <div class="mainProjets">
+
+                <h2 id="p3PresentationProjet">En quoi consiste le projet?</h2>
+                <p>Le projet de fin de 1ère année est exercice en groupe de 3 personne consistant à réaliser un mirroir intéligent sur une raspberry pie.</p>
+
+                <h2 id="p3Analyse">L'analyse</h2>
+                <p>Le projet a débuté par la création d'un dossier d'analyse afin d'analyser les besoin auquel devais répondre notre mirroir. Nous en avons déduit que notre mirroir dévait:<br><br>
+                    Le miroir doit renvoyer le reflet de l’utilisateur .<br><br>
+                    L’appareil doit se mettre en marche lorsqu’un utilisateur s’en approche et en veille lorsqu’il s’éloigne.<br><br>
+                    Pouvoir définir des rappels et les afficher à l’écran.<br><br>
+                    Sur l’écran doivent apparaître des informations telles que la météo de la semaine, la date et l’heure.<br><br>
+                    Afficher des news récupérées sur internet.<br><br>
+                    Il doit être possible de prendre une photo.<br><br>
+                    Il faut pouvoir dessiner sur une photo à l’aide de l’écran tactile.<br><br>
+                    Stocker et afficher des photos.<br><br>
+                    L’utilisateur doit pouvoir choisir ce qui apparaît à l’écran via l’écran tactile dans des paramètres.<br><br>
+                    Quand l’utilisateur se prend en photo et s’il fait trop sombre, le système allumera un système d’éclairage.<br><br>
+                    Modification de l’affichage/éclairage (au niveau des couleurs) selon la météo.<br><br>
+                    Chronométrer le temps passé devant le miroir, pouvoir afficher ce temps et créer des statistiques.<br><br>
+                    Faire des recommandations vestimentaires selon la météo et l’époque de l’année.<br><br>
+                    L’utilisateur doit pouvoir régler la luminosité de l’interface.<br><br>
+                    Pouvoir déplacer les éléments de l’interface.</p>
+
+                <h2 id="p3Conception">La conception</h2>
+                <p>Après avoir réaliser le dossier de conception nous avons réalisé un dossier un dossier de conception</p>
+
+                <h2 id="p3Creation">La création</h2>
+                <p>La programmation du projet c'est déroulé sur une semaine sans autre cour. Nous avons utiliser le JAVA et de nombreuse librairie</p>
+
+                <h3 id="p3Resultat">Le résultat</h3>
+                <p>Nous avons réaliser se que nous avions prévu avec quelques options en plus</p>
+
+                <h2 id="p3Matos"> matériel utilisé</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Quantité</th>
+                            <th>Prix</th>
+                            <th colspan="2">caractéristique</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <th rowspan="10">Raspberry Pi 3 Modèle B</th>
+                        <td rowspan="10">2</td>
+                        <td rowspan="10">60€</td>
+                        <td>CPU</td>
+                        <td>ARM 7100</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de coeur</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Fréquence</td>
+                        <td>1,2GHz</td>
+                    </tr>
+                    <tr>
+                        <td>Fabricant</td>
+                        <td>ARM cortex-a53</td>
+                    </tr>
+                    <tr>
+                        <td>RAM</td>
+                        <td>1 Go</td>
+                    </tr>
+                    <tr>
+                        <td>Wireless LAN</td>
+                        <td>802.11 bgn</td>
+                    </tr>
+                    <tr>
+                        <td>Bluetooth</td>
+                        <td>4.1</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de port USB</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Alimentation</td>
+                        <td>5v 2A</td>
+                    </tr>
+                    <tr>
+                        <td>Résolution d'affichage</td>
+                        <td>5v 2A</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">Base Grove</th>
+                        <td rowspan="3">2</td>
+                        <td rowspan="3">20€</td>
+                        <td>Nombre de pin</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de port</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Voltage</td>
+                        <td>3.3V</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="7">Ecran tactile</th>
+                        <td rowspan="7">2</td>
+                        <td rowspan="7">75€</td>
+                        <td>Technologie d'écran</td>
+                        <td>LCD</td>
+                    </tr>
+                    <tr>
+                        <td>Résolution</td>
+                        <td>800 × 480</td>
+                    </tr>
+                    <tr>
+                        <td>Taille</td>
+                        <td>7 pouce</td>
+                    </tr>
+                    <tr>
+                        <td>Tactile</td>
+                        <td>oui</td>
+                    </tr>
+                    <tr>
+                        <td>Point de tactile simultané</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Luminosité ajustable</td>
+                        <td>Via logiciel</td>
+                    </tr>
+                    <tr>
+                        <td>Port d'affichage</td>
+                        <td>DSI</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="4">Grove Light Sensor v1.2</th>
+                        <td rowspan="4">1</td>
+                        <td rowspan="4">5€</td>
+                        <td>Valeur de sortie</td>
+                        <td>Analogique</td>
+                    </tr>
+                    <tr>
+                        <td>Fiabilitée</td>
+                        <td>Haute</td>
+                    </tr>
+                    <tr>
+                        <td>Sensibilitée</td>
+                        <td>Haute</td>
+                    </tr>
+                    <tr>
+                        <td>Temps de réponse</td>
+                        <td>20-30 millisecondes</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3"> Grove PIR Motion Sensor</th>
+                        <td rowspan="3">1</td>
+                        <td rowspan="3">5€</td>
+                        <td>Distance de détection ajustabe</td>
+                        <td>Oui</td>
+                    </tr>
+                    <tr>
+                        <td>Temps de maintien ajustable</td>
+                        <td>Oui</td>
+                    </tr>
+                    <tr>
+                        <td>Distance de mesure</td>
+                        <td>0.1-6 mètre</td>
+                    </tr>
+                    <tr>
+                        <th>Led</th>
+                        <td>1</td>
+                        <td>0.5€</td>
+                        <td>Couleur</td>
+                        <td>Rouge</td>
+                    </tr>
+                    <tr>
+                        <th>matrice de Led</th>
+                        <td>1</td>
+                        <td>6€</td>
+                        <td>Couleur</td>
+                        <td>RGB</td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <p>GRANDY Guillaume, tous droits réservés</p>
+            <p>le 11/10/2021</p>
+        </footer>
+
+    <script src="../js/java.js"></script>
+    </body>
+
+</html>

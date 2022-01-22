@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+ <head>
+     <title>GRANDY guillaume</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="icon" type="image/png" href="img/logo.png">
+ </head>
+
+ <body>
+    <header>
+        <div class="barre" id="fixed">
+
+            <input id="coche" type="checkbox">
+            <span id="menuDeffilement"></span>
+
+            <a id="logo" href="index.html"> <img src="img/logo.png" alt="logo"></a>
+
+            <nav>
+                <ul>
+                    <li><a id="menuAcceuil" href="#acceuil">Accueil</a></li>
+                    <li><a id="menuPresentation" href="#presentation">Qui suis-je?</a></li>
+                    <li><a id="menuFormation" href="#formation">Ma formation</a></li>
+                    <li id="menuProjets" class="souslist"><a href="#projets">Mes projets</a>
+                        <ul id="sousList">
+                            <li><a href="projets/OutilsGeometrique.html">Outils géométrique</a></li>
+                            <li><a href="projets/ProjetWeb.html">Projet web</a></li>
+                            <li><a href="projets/MirroirIntelligent.html">Mirroir intélligent</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="menuContact" href="#contact">Me contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <input id="boutonTheme" type="checkbox">
+        <span id="imageBoutonTheme"><img src="img/personnalisation.png" alt="logo du menu de personnalisation"> </span>
+
+            <div class="fenetreTheme">
+                <h4>Thème</h4>
+                <div>
+                <input id="themeSombre" type="radio" name="theme" value="sombre">
+                <label for="themeSombre">sombre</label>
+                </div>
+    
+                <div>
+                <input id="themeClaire" type="radio" name="theme" value="claire" checked>
+                <label for="themeClaire">claire</label>
+                </div>
+            </div>
+
+        <div class="acceuil" id="acceuil">
+
+            <div class=panneauTheme></div>
+    
+            <h1 id="autotext">Développeur informatique</h1>
+
+            <h2>GRANDY Guillaume</h2>
+    
+            <h3>HTML, CSS, Javascript, Java, C++, SQL</h3>
+        </div>
+
+    </header>
+    
+    <main>
+        <div id="presentation">
+
+            <h2>Qui suis-je?</h2>
+
+            <div class="deuxPartie">
+
+                <div class="phrasePresentation">
+                    
+                        <article>
+                            <h4>Guillaume GRANDY</h4> 
+                            <p>étudiant de 19 ans</p>
+                        </article>
+
+                        <article>
+                            <h4>Etudiant de Lyon 1</h4> 
+                            <p>à Bourg-en-Bresse</p>
+                        </article>
+
+                        <h3>Mes centres d'intérêt</h3>
+
+                        <article>
+                            <h4>Les activitées sportives</h4>
+                            <p>Je pratique du vélo quotidiennement, la marche à pied, et du handball.</p>
+                        </article>
+
+                        <article>
+                            <h4>Les nouvelles technologie</h4>
+                            <p>Je monte des PCs et m'intéresse de près au évolution des hardware.</p>
+                        </article>
+
+                        <article>
+                            <h4>Les jeux de stratégie</h4>
+                            <p>Je joue régulièrement à des jeux multijoueur de stratégie.</p>
+                        </article>
+
+                        <article>
+                            <h4>La musique</h4>
+                            <p>J'adore travailler avec de la musique dans les oreilles.</p>
+                        </article>
+                </div>
+
+                <div>
+                    <img src="img/imgProfil.png" alt="image de moi">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="formation">
+
+            <h2>Ma formation</h2>
+
+            <div class="deuxPartie">
+
+                <div class="imgRiviere">
+                    <a href="#legend"><div id="bouton1">1</div></a>
+                    <a href="#legend"><div id="bouton2">2</div></a>
+                    <a href="#legend"><div id="bouton3">3</div></a>
+                    <a href="#legend"><div id="bouton4">4</div></a>
+                    <a href="#legend"><div id="bouton5">5</div></a>
+                </div>
+
+                <div id="legend">
+                    <h4 id="legend1">1. Brevet Mention Très Bien</h4>
+                    <p>au collège de Brou à bourg-en-Bresse</p>
+                    <h4 id="legend2">2. Bac S Mention Très Bien</h4>
+                    <p>au lycée Carria à bourg-en-Bresse</p>
+                    <h4 id="legend3">3. Atelier de programmation de robot</h4>
+                    <p>première expérience dans la programmation</p>
+                    <h4 id="legend4">4. Atelier de création de drone</h4>
+                    <p>seconde expérience de programmation</p>
+                    <h4 id="legend5">5.Etude en DUT informatique à Lyon 1</h4>
+                    <p>apprentissage du JAVA, HTML, C++, SQL, ...</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="projets">
+            <h2>Mes projets</h2>
+            <div>
+                <img src="img/geometrie.png" alt="image d'outil géomètrique (règle, rapporteur et équerre)">
+                <div>
+                    <h3>Projet tutoré de millieu de 1ère année</h3>
+                    <p>Ce projet consiste à la rélisation d'un logiciel éducatif pour aider les enfants à utiliser la règle et l'équerre. </p>
+                    <a href="projets/p1.html">en savoir plus</a>
+                </div>
+            </div>
+
+            <div>
+                <img src="img/siteWeb1.png" alt="image du siet réalisé">
+                <div>
+                    <h3>Projet d'HTML de 1ère année</h3>
+                    <p>Ce projet consiste à la conception puis la réalisation d'un site web pour un client fictif</p>
+                    <a href="projets/p2.html">en savoir plus</a>
+                </div>
+            </div>
+
+            <div>
+                <img src="img/mirroir.jpg" alt="image du siet réalisé">
+                <div>
+                    <h3>Projet tutoré de fin de 1ère année</h3>
+                    <p>Ce projet consiste à la conception puis la réalisation d'un mirroir intélligent</p>
+                    <a href="projets/p3.html">en savoir plus</a>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <div id="contact">
+            <h2>Me contacter</h2>
+            <div class="mesCoordonnées">
+                <div>
+                    <div class="caseCoordonnées">
+                        <img src="img/addresse.png" alt="image de l'adresse">
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>83 impasse des peupliers</p>
+                        </div>
+                    </div>
+                    <div class="caseCoordonnées">
+                        <img src="img/appel.png" alt="image de telephone">
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>07/67/99/00/47</p>
+                        </div>
+                    </div>
+                    <div class="caseCoordonnées">
+                        <img src="img/mail.png" alt="image de l'email">
+                        <div>
+                            <h4>Mail</h4>
+                            <p>guillaume.grandy@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="reseau">
+                        <div>
+                            <a href="https://www.facebook.com/profile.php?id=100009868605500"><img src="img/facebook.png" alt="logo facebook"></a>
+                        </div>
+
+                        <div>
+                            <a href="https://twitter.com/azerty02126"><img src="img/twitter.png" alt="logo twitter"></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.872928041269!2d5.275801751358299!3d46.17318519377298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f3535b39f46b4f%3A0x99959afd12ed255a!2s83%20Imp.%20des%20Peupliers%2C%2001250%20Montagnat!5e0!3m2!1sfr!2sfr!4v1635415488761!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        
+            <form action="https://ressources.site/" method="post" enctype="multipart/form-data">
+
+                <fieldset>
+                    <legend>M'envoyer un message</legend>
+                
+                    <div>
+                        <div class="champ">  
+                                <input class="form-input message" id="nom" type="text" name="nom" placeholder=" " required >
+                                <label class="form-label message" for="nom">Nom*</label> 
+                        </div>  
+                        
+                        <div class="champ">
+                                <input class="form-input message" id="prenom" type="text" name="prenom" placeholder=" " >
+                                <label class="form-label message" for="prenom">Prénom</label>
+                        </div>
+                
+                            
+                        <div class="champ">
+                                <input class="form-input message" id="email" type="email" placeholder=" " name="email" required>
+                                <label class="form-label message" for="email">Email*</label>
+                        </div> 
+                        
+                        <div class="champ">
+                            <input class="form-input message" id="telephone" type="tel" placeholder=" " name="telephone"  pattern="([0-9]{2}/[0-9]{2}/[0-9]{2}/[0-9]{2}/[0-9]{2})||([0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2})">
+                            <label class="form-label message" for="telephone">Téléphone (xx/xx/xx/xx/xx ou xx xx xx xx xx)</label>
+                        </div>
+
+                    </div>
+                    <div>
+                        <div style="height: 80%;">
+                            <label for="text">Mon message</label>
+                            <textarea id="text" name=”article” rows=10 cols=50 maxlength=500 required></textarea>
+                        </div>
+
+                        <div id="submitDiv" class="champ">
+                            <button id="submitButon" type="submit" class="submit">Valider</button>
+                        </div>   
+                    </div>
+        
+                </fieldset>
+    
+            </form>
+
+        </div>
+
+    <script src="js/java.js"></script>
+
+    </main>
+
+    <footer>
+        <p>GRANDY Guillaume, tous droits réservés</p>
+        <p>le 11/10/2021</p>
+    </footer>
+
+ </body>
+
+</html>

@@ -1,0 +1,1094 @@
+
+*::before,
+*,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* police */
+
+@font-face{
+    font-family: 'roboto';
+    src: url("../font/Roboto-Black.ttf");
+}
+
+@font-face{
+    font-family: 'Rosalinda';
+    src: url("../font/RosalindaRegular.ttf");
+}
+
+@font-face{
+    font-family: 'josefin';
+    src: url("../font/Josefin.ttf");
+}
+
+@font-face{
+    font-family: 'nanum';
+    src: url("../font/Nanum.ttf");
+}
+
+@keyframes strongColor{
+    0%{color:#1E7DCD;}
+    50%{color:#5c2929;}
+    100%{color:#1E7DCD;}
+}
+
+@keyframes divColor{
+    0%{background-color:rgba(128,128,128,0.5);}
+    50%{background-color:rgba(128,128,128,1);}
+    100%{background-color:rgba(128,128,128,0.5);}
+}
+
+@keyframes clignote{
+    from,
+    to{
+        border-color: transparent;
+    }
+    50%{border-color:#ff79c6;}
+}
+
+@keyframes animlegend{
+    0%{border-color: white;color:white}
+    50%{border-color: chocolate;color:chocolate}
+    100%{border-color: white;color:white}
+}
+
+/* header */
+
+    /* nav */
+
+    nav{
+        width: 100%;
+    }
+
+    .barre{
+        background-color: rgba(96,96,96,0.9);
+    }
+
+    #logo{
+        display:flex;
+        width: 75px;
+        height: 75px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    #fixed{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+    }
+
+    nav >ul{
+        display: flex;
+        height: 100%;
+    }
+
+    nav ul{
+        list-style-type:none;
+    }
+
+    nav ul ul{
+        width: 100%;
+    }
+
+    nav ul li{
+        display: flex;
+        text-align: center;
+    }
+
+    .souslist li a{
+        padding-top: 10px;
+        padding-bottom: 10px;}
+
+    nav a,
+    .souslist{
+        position: relative;
+        text-decoration: none;
+        width: calc(20vw - 20px);
+        color:white;
+        font-family: roboto;
+        font-size: 23px;
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+
+    nav a:hover{
+        transition: all 0.5s linear;
+        background-color: white;
+        color:#3a30ec;
+    }
+
+    #menuProjets:hover{
+        transition: all 0.5s linear;
+        background-color: rgba(96,96,96,0.5);
+        color:#3a30ec;
+    }
+
+
+    #sousList{
+        background-color:rgba(96,96,96,0.5);
+    }
+
+
+    /*fin nav */
+
+    #coche {
+        width: 50px;
+        height: 50px;
+        top:12.5px;
+        left:12.5px;
+        position:absolute;
+        display:flex;
+        opacity:0;
+        z-index: 1;
+    }
+
+    /*panneau de thème*/
+
+    #boutonTheme{position:fixed;
+        top: 130px;
+        left:0;
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+        opacity: 0;}
+
+    #imageBoutonTheme{
+        background-color: rgba(128,128,128,0.5);
+        border-radius: 0 20% 20% 0;
+        position:absolute;
+        top: 130px;
+        left:0;
+    }
+
+    #imageBoutonTheme img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .fenetreTheme{
+        width: 100px;
+        margin-right: auto;
+        background-color:rgba(96,96,96,0.9);
+        color:white;
+        font-size: 20px;
+        position:absolute;
+        top:170px;
+        left:-100px;
+        transition: all 0.75s linear;
+        opacity: 0;
+        border-radius: 0 20% 20% 0;
+    }
+
+    #boutonTheme:checked ~.fenetreTheme{
+        left:0;
+        transition: all 0.75s linear;
+        opacity: 1;
+        top:170px;
+    }
+    /* fin panneau de thème*/
+    
+
+    /* image d'entrée*/
+    .acceuil{
+        display: flex;
+        flex-direction: column;
+        background-image: url("../img/acceuil_background.jpg");
+        background-size: 100%;
+        height: 61.5vw;
+        justify-content: center;
+    }
+
+    .acceuil h1{
+        text-align: center;
+        margin-top: 2vw;
+        font-size:7vw;
+        color:white;
+        font-family:josefin;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    
+    .acceuil h2{
+        padding:0;
+        text-align: center;
+        color:white;
+        font-family: nanum;
+        font-size:6vw;
+    }
+    
+    .acceuil h3{
+        margin-top: 3vw;
+        text-align: center;
+        color:white;
+        font-size:4vw;
+    }
+
+    #autotext{
+        border-right: 0.15em solid #ff79c6;
+        letter-spacing: 0.05em;
+        animation:clignote 0.75s step-end infinite;
+    }
+    /* fin image d'entrée*/ 
+
+/* fin header */
+
+/* body */
+
+body{
+    background-image: url("../img/fond.png");
+}
+
+h2{
+    margin-top: calc(2vw + 10px);
+    padding-top:80px;
+    text-align: center;
+    font-size: calc( 4vw + 20px);
+    text-decoration: underline;
+    font-family: josefin;
+    font-weight: lighter;}
+
+/* présentation */
+
+#presentation img{
+    width: 100%;
+}
+
+.phrasePresentation{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.phrasePresentation h3{
+    font-size:calc(4vw + 15px);
+    margin-top: 4vw;
+    font-weight: 100;
+    font-family:Rosalinda ;
+}
+
+.phrasePresentation article {
+    background-color:rgba(128,128,128,0.5);
+    margin-top: 3vw;
+    width: 90%;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: nanum;
+    font-size: calc(1vw + 10px);
+}
+
+.phrasePresentation article:hover{
+    animation-name: divColor;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+article h4{
+    font-size: calc(2vw + 15px);
+    animation-name: strongColor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-family:Rosalinda;
+    font-weight: 100;
+}
+
+.phrasePresentation{
+    align-content: center;
+    text-align: center;
+}
+
+/*fin présentation */
+
+/* formation */
+.legendActif{
+    color:chocolate;
+    font-size:20px ;
+}
+
+.deuxPartie{
+    display: flex;
+    flex-direction: column;
+}
+
+#formation .imgRiviere{
+   background-image: url(../img/rivière.png);
+   height: 100%;
+   width: 100%;
+   background-size: 100%;
+   height: 150vw;
+}
+
+#formation .imgRiviere div{
+    font-size: 5vw;
+    font-weight: 600;
+    border: 0.5vw solid white;
+    border-radius: 50%;
+    width:7vw;
+    text-align: center;
+    color:white;
+}
+
+#formation .deuxPartie .imgRiviere a{
+text-decoration: none;}
+
+#legend{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#legend p{
+    font-size: 20px;
+    font-family:nanum ;
+    margin-bottom: 40px;
+}
+
+#legend h4{
+    font-size: 25px;
+    font-family:josefin ;
+    margin-bottom: 5px;
+}
+
+#bouton1{   
+    margin-left: 17vw;
+    margin-top:10vw;}
+
+#bouton1:hover{
+    animation-name: animlegend;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#bouton2{   
+    margin-left: 33vw;
+    margin-top: 5vw;}
+
+#bouton2:hover{
+    animation-name: animlegend;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#bouton3{   
+    margin-left: 37vw;
+    margin-top: 8vw;}
+
+#bouton3:hover{
+    animation-name: animlegend;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#bouton4{   
+    margin-left: 30vw;
+    margin-top: 9vw;}
+
+#bouton4:hover{
+    animation-name: animlegend;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#bouton5{   
+    margin-left: 53vw;}
+
+#bouton5:hover{
+    animation-name: animlegend;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/*fin formation */
+
+
+/* projet */
+
+#projets{
+    width: 100%;
+}
+
+#projets div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projets >div{
+    margin-bottom: 10px;
+}
+
+#projets p{
+    text-align: center;
+}
+
+#projets img{
+    width: 100%;
+}
+
+#projets h3{
+    font-family:josefin ;
+    font-size: 25px;
+}
+
+#projets p,
+#projets a{
+    font-family:nanum;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+/*fin projet */
+
+/* contact */
+
+#contact{margin-bottom: 50px;}
+
+iframe{width:100%;
+      height:304px;
+      border:0;}
+
+form{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form fieldset{
+    background-color: rgba(128,128,128,0.5);
+    border-radius: 10px;
+    border-color:#de9fff;
+    border-width: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+form fieldset >div{
+    width: 100%;
+}
+
+form fieldset legend{font-size: x-large;}
+
+form .message {
+    position: absolute;
+    transition: all 0.5s linear;
+}
+
+body .champ{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    position:relative;
+    padding-top: 20px;
+    height:50px;
+    justify-content: center;
+}
+
+.form-input{
+    background-color: rgba(255, 255, 255,0.2);
+    width:90%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom:solid 2px rgb(60, 60, 255);
+    height: 20px;
+}
+
+#text{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-color: rgba(255, 255, 255,0.2);
+}
+
+.valid{border-color: green;}
+
+.invalid{border-color: red;}
+
+input, textarea{
+        outline: none;
+}
+
+.form-input:focus ~ .message,
+.form-input:not(:placeholder-shown) ~ .message,
+.form-label::selection{
+    transform:translateY(-22px);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    transition: all 0.5s linear;
+}
+
+textarea{
+    width: 95%;
+    height: 75%;
+}
+
+#submitDiv{
+    padding:0;
+    height: 35px;
+}
+
+#submitButon{
+    padding:10px;
+    border-radius: 30px;
+}
+
+.mesCoordonnées{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.mesCoordonnées p{
+    font-family: josefin;
+    font-size:5vw;
+}
+
+.mesCoordonnées h4{
+    font-family:josefin;
+    font-size: 6vw;
+}
+
+.mesCoordonnées >div{
+    width: 100%;
+}
+
+#contact >div >div img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.caseCoordonnées{
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right, rgba(128,128,128,0), rgb(240, 240, 240));
+}
+
+.reseau{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgba(128,128,128,0), rgb(240, 240, 240));
+}
+
+/*fin contact */
+
+/* fin body */
+
+/* footer */
+
+footer{
+    background-color:rgb(128, 128, 128);
+    text-align: center;
+}
+
+/* fin footer */
+
+/* -----------------------------------------------------------fin page index-----------------------------------------------------------*/
+
+/* pages projets */
+
+#AcceuilProjet{
+    background-image: url("../img/projets.jpg");
+    background-size: 100%;
+    height: 75px;
+}
+
+/*aside*/
+
+aside{
+    position:inherit;
+    background-color:rgba(128,128,128,0.7);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+    
+aside a{
+    text-align: center;
+    color:black;
+    text-decoration: none;
+    font-size: calc(3.5vw + 15px);
+    font-family: nanum;
+    }
+
+aside ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+aside ul a li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+aside >ul{
+    padding:0;
+}
+/*fin aside*/
+
+
+.mainProjets img{
+    width: 100%;
+    }
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+td,th{
+    text-align: center;
+    padding: 2px;
+    border: 2px solid rgb(128,128,128);
+    font-size:calc(1vw + 10px);
+}
+
+th{background-color:rgba(128,128,128,0.5);}
+
+.mainProjets h3{
+    padding:20px 30px 5px 30px;
+    font-size: calc(3vw + 10px);
+    font-family: josefin;
+}
+    
+.mainProjets p{
+    padding:10px 30px 10px 30px;
+    font-size: calc(1vw + 10px);
+    font-family: nanum;
+}
+
+/*fin pages projets */
+
+
+/* autre */
+
+.dark{color:white}
+
+.actif a,
+.actif{color:red;}
+
+.center{
+    padding-right: auto;
+    padding-left: auto;
+    width:100%;
+}
+
+/*fin autre */
+
+
+/* media */
+
+@media screen and (min-width:426px)
+{
+    .mesCoordonnées p{
+        font-size:3vw;
+    }
+    
+    .mesCoordonnées h4{
+        font-size: 3.5vw;
+    }
+    
+    .mesCoordonnées >div{
+        width: 80%;
+    }
+
+    form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+
+    nav{
+        opacity: 0;
+        width: 100%;
+        transition: all 0.75s linear;
+        position:absolute;
+        transform: translateY(-600px);
+    }
+
+    nav a{
+        width:100%;
+    }
+
+    #menuProjets{width:100%}
+
+    #coche:checked ~nav{
+        opacity: 1;
+        position:relative;
+        transition: all 0.75s linear;
+        transform: translateY(0px);
+    }
+
+    nav ul{
+        display: block;}
+
+    #sousList{
+        border-left: solid 2px white;
+    }
+
+    /*#menuProjets:hover ul{
+        display:block;
+        transition: all 0.5s ease;
+    }*/
+
+    #menuDeffilement{
+        position: absolute;
+        left:0;
+    }
+
+    #menuDeffilement::before{
+        content:"";
+        position :absolute;
+        top : -20px;     
+        width:50px;
+        height:3px;
+        background-color: white;
+    }
+
+    #menuDeffilement{
+        position :absolute;
+        top : 35px;
+        left: 12.5px;
+        width:50px;
+        height:3px;
+        background-color: white;
+        transition: all 0.5s ease-out;
+    }
+
+    #menuDeffilement::after{
+        content:"";
+        position :absolute;
+        top : 20px;        
+        width:50px;
+        height:3px;
+        background-color: white;
+    }   
+    
+    #coche:checked~#menuDeffilement{
+        transform:rotate(225deg);
+        transition: all 0.5s ease-out;
+    }
+
+    #coche:checked~#menuDeffilement::after{
+        transform:translateY(-20px) rotate(90deg);
+        transition: all 0.5s ease-out;
+    }
+
+    #coche:checked~#menuDeffilement::before{
+        opacity:0;
+        transition: all 0.5s ease-out;
+    }
+
+}
+
+@media screen and (min-width:651px)
+{
+
+    /* navigation */
+    #logo{
+        width: 100px;
+        height:auto;
+    }
+
+    h2{
+        padding-top:120px;
+    }
+
+    header a img{
+        width: 100px;
+        transition: all 1s ease;
+    }
+
+    header a img:hover{
+        transform:translateY(10px);
+        transition: all 1s ease;
+    }
+
+    .barre{
+        display: flex;
+        background-color: rgba(96,96,96,0.5);
+    }
+
+    #coche{
+        display:none;
+    }
+        
+    #menuProjets:hover #sousList{
+        transform: translateY(50px);
+        opacity: 1;
+        transition: all 0.75s ease-out;
+    }
+
+    nav ul ul{
+        position:absolute;
+        transform:translateY(calc(-100% - 80px));
+        opacity: 0;
+        transition: all 0.75s ease-in;
+    }
+
+    nav a{
+        font-size: calc(1vw + 15px);
+    }
+
+    nav a:hover{
+        color:#6962ef;
+    }
+
+    #menuProjets:hover{
+        color:#6962ef;
+    }
+   
+    /*fin navgation*/
+
+    /* présentation */
+    article{
+        font-size: 2vw;
+    }
+    
+    article h4{
+        font-size: 3vw;
+    }
+
+    .phrasePresentation article {
+    width: 60%;
+    }
+    /*fin présentation */
+
+
+    /* contact */
+    form{
+        width: 80%;
+    }
+
+    form fieldset{
+        flex-direction: row;
+    }
+
+    form fieldset >div{
+        width: 50%;
+    }
+
+    .mesCoordonnées p{
+        font-size:20px;
+    }
+    
+    .mesCoordonnées h4{
+        font-size: 25px;
+    }
+        
+    /*fin contact */
+
+    /* projet */
+    
+    #projets >div{
+        display: flex;
+        flex-direction:row;
+    }
+
+    #projets div div{
+        justify-content: center;
+    }
+
+    #projets img,
+    #projets div div{
+        width: 50%;
+        height:25vw;
+    }
+
+    #projets img:hover ~div,
+    #projets div div:hover{
+    animation-name: divColor;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    }
+
+    #projets h3{
+        font-size: 2.2vw;
+    }
+    
+    #projets p,
+    #projets a{
+        font-size: 1.6vw;
+    }
+    /*fin projet */
+
+    /* -----------------------------------------------------------fin page index-----------------------------------------------------------*/
+
+    /* pages projets */
+
+
+    .mainProjets{
+        width: calc(85% - 150px);
+    }
+
+    #AcceuilProjet{
+        height: 112.25px;
+    }
+
+    .mainProjets h3{
+        padding:4vw 30px 5px 30px;
+        font-size: calc(1.5vw + 15px);
+    }
+
+    .mainProjets p{
+        font-size: calc(1vw + 10px);
+    }
+
+    /*aside*/
+
+    aside{
+        transform:translateY(0);
+        transition: all 1s linear;
+        margin-top: 112.25px;
+        width: calc(15% + 150px);
+        position: fixed;
+        right: 0;
+        top:0;
+    }
+
+    aside a{
+        font-size:calc(1vw + 25px);
+        text-align:start;
+    }
+
+    /*fin aside*/
+
+    td,th{
+        padding: 5px;
+    }
+
+    /*fin pages projets */
+}
+
+
+@media screen and (min-width: 800px)
+{
+    .acceuil h1{
+        font-size:6vw;
+    }
+
+    .acceuil h2{
+        font-size:3vw;
+    }
+
+    .acceuil h3{
+        font-size: 2vw;
+    }
+
+    nav a li,
+    #menuProjets{
+        font-size: 2.5vw;
+    }
+
+    .deuxPartie{
+        flex-direction: row;
+    }
+
+    /* formation */
+
+    #bouton1{   
+        margin-left: 8vw;
+        margin-top:10vw;}
+    
+    #bouton2{   
+        margin-left: 16.5vw;
+        margin-top: 0;}
+    
+    #bouton3{   
+        margin-left: 19vw;
+        margin-top: 1vw;}
+    
+    #bouton4{   
+        margin-left: 16vw;
+        margin-top: 3vw;}
+    
+    #bouton5{   
+        margin-left: 26.5vw;}
+
+    #formation .imgRiviere{
+        width: 50%;
+        height: 78vw;
+    }
+
+    #formation .imgRiviere div{
+        font-size: 3vw;
+        font-weight: 400;
+        width:4vw;
+        border: 0.25vw solid white;
+    }
+
+    .legendActif{font-size:2.1vw;}
+
+    #legend p{
+        font-size: 2vw;
+    }
+        
+    #legend h4{
+        font-size: 2.5vw;
+    }
+    
+    /* formation */
+}
+
+@media screen and (min-width:1025px)
+{
+
+
+    .mesCoordonnées{
+        flex-direction: row;
+        align-items:inherit;
+    }
+
+    .mesCoordonnées >div{
+        width: 40%;
+    }
+
+    #projets{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #projets img,
+    #projets div div{
+        width: 50%;
+        height:20vw;
+    }
+}
+
+@media screen and (min-width: 1101px)
+{
+    .phrasePresentation div{
+        padding: 30px;
+    }
+
+    nav a li,
+    #menuProjets{
+        font-size: 2vw;
+    }
+}
+
+
+@media screen and (min-width: 1399px)
+{
+    .mainProjets img{
+        width:49.8%}
+}
